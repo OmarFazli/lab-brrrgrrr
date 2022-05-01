@@ -40,8 +40,10 @@ function renderPatty() {
   //you can also use getElementById
   if (state.Patty) {
     patty.style.display = "inherit";
+    document.querySelector(".btn-patty").classList.add("active")
   } else {
     patty.style.display = "none";
+    document.querySelector(".btn-patty").classList.remove("active")
   }
 }
 
@@ -51,8 +53,10 @@ function renderCheese() {
   //you can also use getElementById
   if (state.Cheese) {
     cheese.style.display = "inherit";
+    document.querySelector(".btn-cheese").classList.add("active")
   } else {
     cheese.style.display = "none";
+    document.querySelector(".btn-cheese").classList.remove("active")
   }
 }
 
@@ -62,8 +66,10 @@ function renderTomatoes() {
   //you can also use getElementById
   if (state.Tomatoes) {
     tomatoes.style.display = "inherit";
+    document.querySelector(".btn-tomatoes").classList.add("active")
   } else {
     tomatoes.style.display = "none";
+    document.querySelector(".btn-tomatoes").classList.remove("active")
   }
 }
 
@@ -73,8 +79,10 @@ function renderOnions() {
   //you can also use getElementById
   if (state.Onions) {
     onions.style.display = "inherit";
+    document.querySelector(".btn-onions").classList.add("active")
   } else {
     onions.style.display = "none";
+    document.querySelector(".btn-onions").classList.remove("active")
   }
 }
 
@@ -84,9 +92,12 @@ function renderLettuce() {
   //you can also use getElementById
   if (state.Lettuce) {
     lettuce.style.display = "inherit";
+    document.querySelector(".btn-lettuce").classList.add("active")
+
   } else {
     lettuce.style.display = "none";
-  }
+    document.querySelector(".btn-lettuce").classList.remove("active")
+  }  
 }
 
 document.querySelector(".btn-patty").onclick = function () {
@@ -119,6 +130,8 @@ document.querySelector(".btn-lettuce").onclick = function () {
 };
 
 //Challenge 1 - Add/Remove the class active to the buttons based on state
+//code for this challenge is present in the code for trial 1
+
 
 
 //Challenge 2 - Render only the items selected in the ingredients board based on the state
